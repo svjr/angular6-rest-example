@@ -1,0 +1,45 @@
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<div id="div_principal" class="mat-elevation-z8">
+  <div id="div_search">
+    <mat-form-field>
+      <input matInput (keyup)="applyFilter($event.target.value)">
+    </mat-form-field>
+  </div>
+
+  <table mat-table [dataSource]="dataSource">
+    <ng-container matColumnDef="#">
+       <th mat-header-cell *matHeaderCellDef> # </th>
+       <td mat-cell *matCellDef="let material"><i class="material-icons cinzaclaro">face</i></td>
+    </ng-container>
+    <ng-container matColumnDef="id">
+      <th mat-header-cell *matHeaderCellDef> Id </th>
+      <td mat-cell *matCellDef="let material"> {{material.id}} </td>
+    </ng-container>
+    <ng-container matColumnDef="sigla">
+      <th mat-header-cell *matHeaderCellDef> Sigla </th>
+      <td mat-cell *matCellDef="let material"> {{material.sigla}} </td>
+    </ng-container>
+    <ng-container matColumnDef="descricao">
+      <th mat-header-cell *matHeaderCellDef> Descrição </th>
+      <td mat-cell *matCellDef="let material"> {{material.descricao}} </td>
+    </ng-container>
+    <ng-container matColumnDef="subClasseSigla">
+      <th mat-header-cell *matHeaderCellDef> Sigla SubClasse </th>
+      <td mat-cell *matCellDef="let material"> {{material.subClasse.sigla}} </td>
+    </ng-container>
+    <ng-container matColumnDef="subClasseDescricao">
+      <th mat-header-cell *matHeaderCellDef> Descricao SubClasse </th>
+      <td mat-cell *matCellDef="let material"> {{material.subClasse.descricao}} </td>
+    </ng-container>
+    <ng-container matColumnDef="classeSigla">
+      <th mat-header-cell *matHeaderCellDef> Classe Sigla </th>
+      <td mat-cell *matCellDef="let material"> {{material.subClasse.classe.sigla}} </td>
+    </ng-container>
+    <ng-container matColumnDef="classeDescricao">
+      <th mat-header-cell *matHeaderCellDef> Classe Descricao </th>
+      <td mat-cell *matCellDef="let material"> {{material.subClasse.classe.descricao}} </td>
+    </ng-container>
+    <tr mat-header-row *matHeaderRowDef="colunasTabela"></tr>
+    <tr mat-row *matRowDef="let row; columns: colunasTabela;"></tr>
+  </table>
+</div>

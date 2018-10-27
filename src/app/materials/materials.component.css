@@ -1,0 +1,54 @@
+#div_principal{
+  width: 80%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 10px;
+  width:70%; 
+  margin-left:15%; 
+  margin-right:15%;
+}
+#div_search{
+  background-color:#c3c3c3;
+  width: 100%;
+}
+table {
+  width: 100%;
+  margin-top: 10px;
+}
+table.mat-table {
+    border-spacing: 0;
+}
+table[_ngcontent-c31] {
+    width: 100%;
+}
+.mat-table {
+    background: #fff;
+}
+
+.mat-elevation-z8 {
+    box-shadow: 0 5px 5px -3px rgba(0,0,0,.2),0 8px 10px 1px rgba(0,0,0,.14),0 3px 14px 2px rgba(0,0,0,.12);
+}
+
+.material-icons.cinzaclaro { color: lightgray; }
+
+
+app-component-viewer, app-component-viewer .mat-tab-label:focus, guide-viewer, guide-viewer .mat-tab-label:focus {
+
+    color: rgba(0,0,0,.87);
+
+}
+mat-form-field input{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+mat-form-field {
+    font-style: italic;
+    margin: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    width: 98%;
+    text-align: left;  
+    line-height: 2.125;
+    border-bottom: 2px #fff;
+    background: #fff;
+  
+}

@@ -1,0 +1,54 @@
+{
+  "materials":[  
+   {  
+      "id":156,
+      "sigla":"KDL-48W655D",
+      "descricao":"Smart TV LED 48 Full HD Sony BRAVIA",
+      "subClasse":{  
+         "idSubClasse":3,
+         "classe":{  
+            "idClasse":3,
+            "descricao":"Televisores",
+            "sigla":"Tvs"
+         },
+         "descricao":"Televisores",
+         "sigla":"TV e Vídeo"
+      },
+      "tipoMaterial":"Eletronico",
+      "estado":"ATIVO"
+   },
+   {  
+      "id":18,
+      "sigla":"40J5200",
+      "descricao":"Smart-TV-LED-40-Full-HD-Samsung",
+      "subClasse":{  
+         "idSubClasse":3,
+         "classe":{  
+            "idClasse":3,
+            "descricao":"Televisores",
+            "sigla":"TV e Vídeo"
+         },
+         "descricao":"Televisores",
+         "sigla":"TV e Vídeo"
+      },
+      "tipoMaterial":"Eletronico",
+      "estado":"ATIVO"
+   },
+   {  
+      "id":33,
+      "sigla":"13382662",
+      "descricao":"Notebook Lenovo Core i5-8250U 8GB 1TB",
+      "subClasse":{  
+         "idSubClasse":7,
+         "classe":{  
+            "idClasse":7,
+            "descricao":"Product",
+            "sigla":"PROD"
+         },
+         "descricao":"Product",
+         "sigla":"PROD"
+      },
+      "tipoMaterial":"Eletronico",
+      "estado":"ATIVO"
+   }
+]}
